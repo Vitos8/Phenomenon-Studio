@@ -76,7 +76,7 @@
           &__article{
                // flex-direction: row;
                align-items: center;
-               padding-bottom: 40vh;
+               padding-bottom: 60vh;
           }
 
           &__image-row{
@@ -91,6 +91,16 @@
                position: absolute;
                bottom: 0;
                left:0;
+          }
+     }
+}
+
+@media screen and (max-width: $mobileSmall) {
+
+     .main{
+
+          &__article{
+               padding-bottom: 40vh;
           }
      }
 }
