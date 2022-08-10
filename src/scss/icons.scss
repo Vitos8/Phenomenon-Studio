@@ -1,0 +1,49 @@
+.icons {
+     margin-top: 80px;
+     padding: 30px 0px;
+     background-color: $White;
+
+     &__row {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+     }
+
+     &__icon {
+          width: 188px;
+          height: 65px;
+     }
+
+     &__button {
+          background-color: $Salmon;
+     }
+}
+
+
+//Media
+@media screen and (max-width: 1024px) {
+     .icons{
+
+          &__row{
+               justify-content: space-around;
+               flex-wrap: wrap;
+               align-items: center;
+          }
+
+          &__icon{
+               margin-bottom: 35px;
+          }
+     }
+}
+
+@media screen and (max-width: $mobile) {
+
+     .icons{
+          margin-top: 0px;
+
+          &__icon{
+               width: 134px;
+               height: 42px;
+          }
+     }
+}

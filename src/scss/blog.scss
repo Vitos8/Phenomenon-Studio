@@ -1,0 +1,145 @@
+.blog {
+
+     &__row {
+          display: flex;
+     }
+
+     &__first {
+          padding-top: 100px;
+          background-color: $White;
+          flex: 50%;
+     }
+
+     &__first-row {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+     }
+
+     &__first-img {
+          width: 529px;
+          height: 361px;
+     }
+
+     &__first-icon {
+          width: 85px;
+          height: 85px;
+          margin-bottom: 30px;
+     }
+
+     &__first-title {
+          width: 400px;
+          color: $Black;
+          font-weight: 700;
+          font-size: 70px;
+          line-height: 95%;
+          margin-bottom: 30px;
+     }
+
+     &__first-subtitle {
+          color: $Black;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 180%;
+     }
+
+     &__second {
+          padding-top: 80px;
+          background: url(../img/blog-section/2637\ 1.png) no-repeat;
+          background-size: cover;
+          flex: 50%;
+
+     }
+
+     &__second-row {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
+     &__second-icon {
+          width: 86px;
+          height: 86px;
+          margin-bottom: 20px;
+     }
+
+     &__second-title {
+          color: $White;
+          font-weight: 700;
+          font-size: 52px;
+          line-height: 90%;
+          margin-bottom: 40px;
+     }
+
+
+}
+
+
+//Media 
+
+@media screen and (max-width: 1050px) {
+     .blog{
+
+          &__row {
+               display: block;
+          }
+     }
+}
+
+
+@media screen and (max-width: $mobile) {
+     .blog{
+
+          &__first{
+               padding: 30px 0px 13px 0px;
+
+               &-title{
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 95%;
+                    text-align: center;
+                    width: 100%;
+               }
+
+               &-subtitle{
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 180%;
+               }
+
+               &-icon{
+                    width: 44px;
+                    height: auto;
+               }
+
+               &-img{
+                    width: 300px;
+                    height: auto;
+               }
+          }
+
+          &__second{
+               padding-top: 40px;
+
+               &-title{
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 90%;
+                    text-align: center;
+               }
+
+               &-icon{
+                    width: 45px;
+                    height: auto;
+               }
+
+               &-img{
+                    width: 260px;
+                    height: auto;
+               }
+          }
+
+
+     }
+}

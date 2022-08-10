@@ -1,0 +1,51 @@
+//<INPUT>
+
+.input-wrapper{
+	display: flex;
+	align-items: center;
+}
+.input{
+	padding: 15px 10px;
+	background: #FFFF;
+	border: 1px solid #2D2A26;
+	border-radius: 10px 0px 0px 10px;
+	width: 260px;
+
+	&:focus{
+		border-color: #3898ec;
+		outline: none;
+	}
+}
+
+.submit{
+	background-color: $Salmon;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	padding: 14px 36px;
+	padding-top: 12.5px;
+	border-radius: 0px 10px 10px 0px;
+	border: 1px solid #2D2A26;
+	margin-left: -5px;
+	transition: all .4s ease;
+
+	&:hover{
+		background-color: #f68d2e;
+	}
+
+	&:focus{
+		outline: none;
+		border: 1px solid #2D2A26;
+		background-color: #f68d2e;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.input{
+		width: 180px;
+	}
+
+	.submit{
+		padding: 13px 23px;
+	}
+}

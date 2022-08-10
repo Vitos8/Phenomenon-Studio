@@ -1,0 +1,28 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	padding: 16px 25px;
+	background-color: $White;
+	border: 1px solid #2D2A26;
+	border-radius: 10px;
+
+	&:hover{
+		transform: translate(2px, 2px);
+		transition: transform .3s ease;
+	}
+}
+
+.button-wrapper{
+	
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.75);
+	box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.75);
+}
+
+
+

@@ -1,0 +1,125 @@
+.mission {
+     padding-top: 104px;
+     background: $Black;
+
+     &__row {
+          display: flex;
+          justify-content: space-between;
+     }
+
+     &__img {
+
+          width: 477px;
+          height: 577px;
+     }
+
+     &__article {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 514px;
+     }
+
+     &__title {
+          color: $White;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 105%;
+          letter-spacing: -3px;
+          margin-bottom: 30px;
+
+          &-orange{
+               color: $Orange;
+          }
+
+          &-salmon{
+               color: $Salmon;
+          }
+
+          &-blue{
+               color: $Blue;
+          }    
+     }
+
+     &__subtitle {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 150%;
+          letter-spacing: -0.01em;
+          color: $White;
+          margin-bottom: 36px;
+     }
+
+     &__button-wrapper{
+          box-shadow: 5px 4px 0px 1px rgb(255, 255, 255);
+
+     }
+
+     &__button {
+          background-color:$Pink;
+     }
+}
+
+//Media
+
+
+@media screen and (max-width: 1064px) {
+     .mission{
+          padding-top: 31px;
+
+          &__row{
+               flex-direction: column;
+               align-items: center;
+          }
+
+          &__article{
+               order: 1;
+               width: 700px;
+          }
+
+          &__img{
+               order: 2;
+          }
+     }
+}
+
+@media screen and (max-width: $mobile) {
+     .mission{
+
+          &__article{
+               order: 1;
+               width: 100%;
+          }
+
+          &__title{
+               font-weight: 700;
+               font-size: 36px;
+               line-height: 105%;
+               margin-bottom: 24px;
+          }
+
+          &__subtitle{
+               font-weight: 500;
+               font-size: 18px;
+               line-height: 150%;
+               margin-bottom: 20px;
+          }
+
+          &__img{
+               margin-top: 10px;
+               order: 2;
+
+          }
+     }
+}
+
+
+@media screen and (max-width: 500px) {
+     .mission__img{
+          width: 309px;
+          height: auto;
+          // height: 373px;
+     }
+}
